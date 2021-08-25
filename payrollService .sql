@@ -20,3 +20,6 @@ SELECT * FROM address_book;
 SELECT salary FROM employee_payroll WHERE name = 'Krati';
 Select * FROM employee_payroll
    WHERE start BETWEEN CAST('2021-02-08' AS DATE) AND DATE(NOW());
+   
+ ALTER TABLE employee_payroll ADD gender CHAR(6) AFTER name;
+ UPDATE employee_payroll set gender = "female" WHERE name ='Krati' or name = 'Nishu' or name = 'Shreya';
