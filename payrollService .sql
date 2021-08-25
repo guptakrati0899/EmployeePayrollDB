@@ -23,3 +23,9 @@ Select * FROM employee_payroll
    
  ALTER TABLE employee_payroll ADD gender CHAR(6) AFTER name;
  UPDATE employee_payroll set gender = "female" WHERE name ='Krati' or name = 'Nishu' or name = 'Shreya';
+SELECT *FROM employee_payroll;
+
+SELECT AVG(salary) FROM employee_payroll WHERE gender = 'female' GROUP BY gender;
+SELECT gender , COUNT(name) FROM employee_payroll GROUP BY gender;
+ SELECT gender , SUM(name) FROM employee_payroll GROUP BY gender;
+SELECT gender, SUM(salary) FROM employee_payroll GROUP BY gender;
