@@ -15,4 +15,4 @@ INSERT INTO employee_payroll (name, salary, start) VALUES
 ('Nishu', 500000.0, '2021-03-08'),
 ('Shreya', 600000.0, '2021-04-08');
 
-SELECT * FROM address_book;
+
